@@ -1,0 +1,191 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .header_section{
+        height: 70vh;
+    }
+    .header_section header{
+        padding: 20px 20px;
+        background-color: #fff;
+    }
+    header .menu ul{
+        display: none;
+    }
+    .menu .menu_btn{
+        display: block;
+    }
+    .header_section .slider{
+        background: none;
+        height: 60vh;
+    }
+    .slider .slider_item{
+        margin: 0 auto;
+        width: 38vh;
+        text-align: center;
+    }
+    .slider_item .info_titile{
+        font-size: 3.2em;
+    }
+    .block_section{
+        flex-direction: column;
+    }
+    .features_section .block_info{
+        width: 60vw;
+    }
+    .features_section .features_img {
+        width: 25vw;
+    }
+    .features_item p{
+        line-height: 1.5em;
+    }
+    .about_section .block_item .about_info{
+        width: auto;
+            margin: 15vh 0 12vh 7vw;
+    }
+    .achivements_section{
+        flex-direction: column-reverse;
+    }
+    .achivements_section .achivements_block {
+        margin: 0 auto;
+        width: 80vw;
+    }
+    .achivements_block h1{
+        margin: 10vh 0 4vh 0;
+    }
+    .achivements_section .achivements_col{
+        margin:  0 0 3vh 0;
+    }
+    .milestone_block .milestone_head{
+        width: 80vw;
+    }
+    .milestone_block .milestone_item {
+        width: 100vw;
+        flex-direction: column;
+    }
+    .milestone_block .milestone_item:nth-child(3), 
+    .milestone_block .milestone_item:nth-child(5){
+        flex-direction: column-reverse;
+    }
+    .milestone_block .milestone_item:last-child:after{
+        bottom: -8%;
+    }
+    .milestone_item .mile_year, 
+    .milestone_item .mile_img, 
+    .milestone_item .mile_details{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .milestone_item .mile_img{
+        margin: 2vh auto;
+    }
+    .milestone_item .mile_details h4, 
+    .milestone_item .mile_details p, 
+    .milestone_item .mile_details h4.text_right, 
+    .milestone_item .mile_details p.text_right{
+        text-align: center;
+    }
+    .milestone_block .milestone_item::before{
+        top: -8%;
+    }
+    .projects_section .tags ul{
+        display: flex;
+        width: 85vw;
+        margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-self: center;
+        gap: 1.5vh 0;
+    }
+    .projects_section .project_slider{
+        flex-direction: column;
+        height: 27ch;
+        overflow: hidden;
+    }
+    .news_block .post_prev, 
+    .news_block .post_next{
+        display: none;
+    }
+    .news_block{
+        height: 50ch;
+        overflow: hidden;
+    }
+    .news_block, .news_block .card_container{
+        flex-direction: column;
+    }
+    .news_block .card_container{
+        width: 100vw;
+        gap: 3vh 0;
+    }
+    .news_block .card_box{
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .news_block .card_box .card_details{
+        padding: 1.0vh 8vw;
+    }
+    .contacts_section{
+        flex-direction: column-reverse;
+    }
+    .contacts_section .contact_block .contact_box{
+        width: 80vw;
+    }
+    .contact_form form{
+        flex-direction: column;
+        gap: 4vw;
+    }
+    .contact_form form .form_item{
+        width: 80vw;
+    }
+    footer .footer_section{
+        flex-direction: column;
+    }
+    .footer_section .menu{
+        margin-bottom: 4vh;
+    }
+    .footer_section .menu ul{
+        display: flex;
+        width: 80vw;
+        margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-self: center;
+        gap: 3vh 1.5vh;
+    }
+    .footer_section .menu ul li{
+        display: block;
+    }
+    .footer_section .menu ul li:after{
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    .footer_section .menu ul li a, 
+    .footer_section .menu ul li a:hover, 
+    .footer_section .menu ul li a:focus, 
+    .footer_section .menu ul li a:active{
+        font-size: 0.85em;
+    }
+}
+
+
+@media only screen and (orientation: landscape) {
+    .header_section, .header_section .slider{
+        height: auto;
+    }
+    .header_section .slider{
+        padding: 8vh 0;
+    }
+    .slider .slider_item{
+        width: 33vw;
+    }
+    .slider_item .info_titile {
+        font-size: 2.8em;
+    }
+    .features_section .block_info{
+        width: 35vw;
+    }
+    .features_section .features_img{
+        width: 15vw;
+    }
+}

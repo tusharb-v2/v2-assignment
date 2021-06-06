@@ -1,0 +1,553 @@
+/**** Commmon classes css for reuse ****/
+.btn{
+    border: 3px solid #ff487c;
+    border-radius: 25px;
+    padding: 1.6em 2em;
+    margin: 0;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.btn.wht_btn{
+    color: #ffffff;
+    padding: 1.6em 3em;
+}
+/**** header section css ****/
+.header_section{
+    height: 100vh;
+    background: rgb(219,223,226);
+    background: radial-gradient(circle, rgba(219,223,226,1) 0%, rgba(208,212,215,1) 50%, rgba(197,201,204,1) 100%); 
+}
+.header_section header{
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+}
+header .logo .logo_btn{
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    margin-right: 12px;
+}
+header .logo_name{
+    font-size: 2.3em;
+    font-weight: 400;
+}
+header .menu{
+    flex-grow: 1;
+    text-align-last: right;
+    align-self: center;
+}
+header .menu ul {
+    display: inline-block;
+}
+header .menu ul li{
+    display: inline;
+}
+.menu ul li:after{
+    content: "\A";
+    width: 0.40em;
+    height: 0.40em;
+    border-radius: 50%;
+    background: #000000;
+    display: inline-block;
+    margin: 0 4vh;
+}
+.menu ul li:last-child:after{
+    display: none;
+}
+.menu ul li a{
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+.menu ul li a:hover, 
+.menu ul li a:focus, 
+.menu ul li a:active{
+    text-decoration: none;
+    color: #000000;
+}
+.menu .menu_btn{
+    display: none;
+}
+.menu .menu_btn .nav_menu{
+    background-color: #fff;
+}
+.header_section .slider{
+    height: 87vh;
+    background-image: url(/assets/slider-1.png);
+    background-position: bottom;
+    background-position-x: 70%;
+    background-position-y: 0%;
+    background-size: auto 88ch;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider_item{
+    margin: -10vh 0 0 -60vh;
+    width: 54vh;
+}
+.slider_item h5{
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0.8em;
+    text-transform: uppercase;
+    margin: 0 0 2.5vh 0;
+}
+.slider_item .info_titile{
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0 0 2.5vh 0;
+}
+
+/**** Middle Section CSS ****/
+.block_section{
+    display: flex;
+    flex-direction: row;
+}
+.block_section .block_item{
+    width: 100vw;
+}
+.features_section .block_item{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.block_section .block_info{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+}
+.block_section .block_colr_red{
+    background-color: #ff487c;
+}
+.block_section .block_colr_grey{
+    background-color: #cdd1d4;
+}
+.block_section .block_colr_black{
+    background-color: #212934;
+}
+.block_section .block_colr_4{
+    background-color: #f3f2f7;
+}
+.features_item{
+    margin: 0 0 0 10px;
+}
+.features_img{
+    width: 6vw;
+}
+.features_img img{
+    width: 100%;
+}
+.features_item h3{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 2vh 0;
+}
+.features_item p{
+    font-size: 0.85em;
+    font-weight: 400;
+}
+.block_section .block_item > img{
+    width: 100%;
+    height: 100%;
+}
+.about_section .block_item .about_info{
+    width: 30vw;
+    margin: 15vh 0 0 7vw;
+}
+.about_info h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 4vh 0;
+}
+.about_info p{
+    font-size: 0.85em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    margin: 0 0 4vh 0;
+}
+.about_info p.colr_white{
+    color: #ffffff;
+}
+.about_info p.colr_gery{
+    color: #787b82;
+}
+.achivements_section .achivements_block{
+    margin: 0 auto;
+    width: 30vw;
+}
+.achivements_block h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #000;
+    margin: 15vh 0 4vh 0;
+}
+.achivements_block p{
+    font-size: 0.85em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    margin: 0 0 4vh 0;
+}
+.achivements_col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.achivements_col .achivements_item{
+    width: 50%;
+}
+.achivements_item .count{
+    font-size: 1.9em;
+    font-weight: 600;
+    color: #000;
+    margin: 1vh 0;
+}
+.achivements_item .count_details{
+    font-size: 0.75em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 4vh 0;
+}
+.milestone_section .milestone_block{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+.milestone_block .milestone_head{
+    width: 40vw;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.milestone_head h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #000;
+    margin: 10vh 0 4vh 0;
+}
+.milestone_head p{
+    font-size: 0.85em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    margin: 0 0 4vh 0;
+}
+.milestone_block .milestone_item{
+    width: 25vw;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4vh 0;
+    position: relative;
+}
+.milestone_block .milestone_item::before{
+    content: "\22EE";
+    color: #e8e8e8;
+    font-size: 3em;
+    position: absolute;
+    left: 48%;
+    top: -15%;
+}
+.milestone_block .milestone_item:last-child:after{
+    content: "\22EE";
+    color: #e8e8e8;
+    font-size: 3em;
+    position: absolute;
+    left: 48%;
+    bottom: -15%;
+}
+.milestone_item .mile_year{
+    font-size: 1.9em;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+    width: 30%;
+}
+.milestone_item .mile_img{
+    width: 30%;
+    margin: 0 5%;
+}
+.milestone_item .mile_img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.milestone_item .mile_details{
+    align-self: center;
+    width: 30%;
+}
+.milestone_item .mile_details h4{
+    font-size: 1.0em;
+    font-weight: 600;
+    margin: 0 0 1.5vh 0;
+}
+.milestone_item .mile_details p{
+    font-size: 0.65em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.milestone_item .mile_details .text_right{
+    text-align: right;
+}
+.milestone_item .mile_year.colr_1{
+    color: #ff487c;
+}
+.milestone_item .mile_year.colr_2{
+    color: #a8c956;
+}
+.milestone_item .mile_year.colr_3{
+    color: #07c49e;
+}
+.milestone_item .mile_year.colr_4{
+    color: #f28a4d;
+}
+
+.projects_section h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #fff;
+    margin: 10vh 0 4vh 0;
+    text-align: center;
+}
+.projects_section .tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.projects_section .tags ul{
+    display: inline-block;
+}
+.projects_section .tags ul li{
+    display: inline;
+    margin: 0 10px;
+}
+.tags ul li a{
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tags ul li a:hover, 
+.tags ul li a:focus, 
+.tags ul li a:active, 
+.tags ul li a.active{
+    text-decoration: none;
+    color: #ff487c;
+}
+.projects_section .project_slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5vw;
+    margin: 3vh 0 7vh 0;
+}
+.projects_section .project_slider_item img{
+    width: 100%;
+    height: 100%;
+}
+.projects_section .btn_box{
+    text-align: center;
+    padding: 0 0 10vh 0;
+}
+
+.news_section h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #000000;
+    margin: 10vh 0 4vh 0;
+    text-align: center;
+}
+.news_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 10vh 0;
+}
+.news_block .card_container{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+.news_block .card_box > img{
+    width: 100%;
+}
+.news_block .card_box{
+    background-color: #fff;
+    width: 30vw;
+}
+.news_block .post_prev{
+    align-self: center;
+    text-align: center;
+    background-color: transparent;
+    width: 18vw;
+}
+.news_block .post_next{
+    align-self: center;
+    text-align: center;
+    background-color: transparent;
+    width: 18vw;
+}
+.news_block .card_box .txt a{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #dce0e3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.news_block .card_box .txt a:hover, 
+.news_block .card_box .txt a:focus, 
+.news_block .card_box .txt a:active{
+    text-decoration: none;
+    color: #dce0e3;
+}
+.news_block .card_box .card_details{
+    padding: 1.0vh 2.5vw;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+    text-align: center;
+}
+.card_details .date{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #ff487c;
+    text-transform: uppercase;
+    margin: 1.5vh 0;
+}
+.card_details h2{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0 0 1.5vh 0;
+}
+.card_details p{
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin: 0 0 1.5vh 0;
+}
+.card_details .user_box{
+    font-size: 0.65em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 1.5vh 0;
+}
+
+.contacts_section .contact_block_img{
+    height: 100%;
+}
+.contacts_section .contact_block_img img{
+    width: 100%;
+    height: 100%;
+}
+.contacts_section .contact_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacts_section .contact_block .contact_box{
+    width: 30vw;
+}
+.contact_box h1{
+    font-size: 2.1em;
+    font-weight: 500;
+    color: #000000;
+    margin: 10vh 0 4vh 0;
+    text-align: left;
+}
+.contact_form form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+.contact_form form .form_item{
+    width: 14.3vw;
+}
+.contact_form form .form_item:last-child{
+    flex-grow: 1;
+}
+.form_item .form_control{
+    padding: 5%;
+    width: 89%;
+    font-family: 'Poppins', sans-serif, Arial;
+    background-color: #f3f2f7;
+    border: 1px solid #f3f2f7;
+}
+.form_item .form_control:focus, .form_item .form_control:active{
+    background-color: #f3f2f7;
+    border-color: #f3f2f7;  
+    outline: none;
+}
+.form_item .form_control:last-child{
+    width: 89%;
+}
+.form_item textarea.form_control{
+    padding: 7% 5%;
+    width: 90%;
+    font-family: 'Poppins', sans-serif, Arial;
+}
+.contact_form .btn_box{
+    margin: 1.2em 0;
+}
+footer .footer_section{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: #212934;
+}
+.footer_section .block_item{
+    flex-grow: 1;
+    text-align-last: center;
+    align-self: center;
+}
+.footer_section .block_item.block_right{
+    text-align-last: right;
+}
+.footer_section .menu ul {
+    display: inline-block;
+}
+.footer_section .menu ul li{
+    display: inline;
+}
+.footer_section .menu ul li:after{
+    background: #fff;
+    width: 0.35em;
+    height: 0.35em;   
+    margin: 2px 2vh;
+}
+.footer_section .menu ul li a, 
+.footer_section .menu ul li a:hover, 
+.footer_section .menu ul li a:focus, 
+.footer_section .menu ul li a:active{
+    font-size: 0.75em;
+    color: #fff;
+}
+.footer_section .callus_box{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #fff;
+}
+.footer_section .callus_box .colr_1{
+    color: #ff487c;
+}
