@@ -169,7 +169,7 @@
 }
 
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) { 
     .header_section, .header_section .slider{
         height: auto;
     }
